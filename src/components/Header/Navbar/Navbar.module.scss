@@ -1,0 +1,63 @@
+@import './../../../styles/variables.scss';
+
+.navigation{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    left: 60px;
+    top: 0;
+    border-right: 2px white solid;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+
+    &__content{
+        position: relative;
+        background: black;
+        width: 650px;
+        height: 100vh;
+        border-right: 2px white solid;
+
+
+        &__page{
+            height: 90px;
+            border-bottom: 2px white solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            cursor: pointer;
+            color: white;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+    
+            &:hover{
+                color: rgb(224, 255, 27);
+                border-bottom: 2px rgb(224, 255, 27) solid;
+            }
+    
+            &__name{
+                // font-size: calc(var(--vh)*8);
+                font-size: 4rem;
+                pointer-events: none;
+            }
+    
+            &__number{
+                font-size: 1.2rem;
+                pointer-events: none;
+            }
+        }
+    
+        &__title{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+            padding: 0 10px 10px;
+            font-size: 10rem;
+        }
+    }
+    
+    
+
+}

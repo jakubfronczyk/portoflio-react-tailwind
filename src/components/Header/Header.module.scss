@@ -1,0 +1,63 @@
+@import './../../styles/variables.scss';
+
+.header{
+    background: black;
+    width: 60px;
+    position: fixed;
+    height: 100vh;
+    border-right: 2px white solid;
+
+    &__btn {
+            background: black;
+            height: 130px;
+            width: 60px;
+            border-right: 2px white solid;
+            border-bottom: 2px white solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.4s;
+
+            &:hover{
+                gap: 0.7em;
+                transition: all 0.4s;
+            }
+            &:hover &__dot{
+                width: 7px;
+                height: 7px;
+                background-color: rgb(224, 255, 27);
+            }
+            
+            &__dot{
+                background: white;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+        }
+    
+    &__span{
+        color: white;
+        font-size: 2rem;
+        transform-origin: left top;
+        transform: rotate(-90deg) translate(-50%, calc(28px - 50%));
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 300px;
+    }
+}
+
+
+.inactive {
+    opacity: 0;
+    visibility: hidden;
+}
+.acive {
+    opacity: 1;
+    visibility: visible;
+}
