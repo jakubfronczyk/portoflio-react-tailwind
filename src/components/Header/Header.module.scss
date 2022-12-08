@@ -6,6 +6,8 @@
     position: fixed;
     height: 100vh;
     border-right: 2px white solid;
+    z-index: 4;
+    backdrop-filter: blur(10px);
 
     &__btn {
             background: black;
@@ -52,12 +54,22 @@
     }
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    // left: -100%;
+    transform: translate(-100%, 0%);
+    z-index: 3;
+    transition: all 0.3s ease-in;
+}
 
-.inactive {
-    opacity: 0;
-    visibility: hidden;
+.active {
+    left: 60px;
+    transition: all 0.3s ease-in-out;
+    transform: translate(0px, 0px);
+    // backdrop-filter: blur(4px);
+    // width: 100vw;
 }
-.acive {
-    opacity: 1;
-    visibility: visible;
-}
+
+
+

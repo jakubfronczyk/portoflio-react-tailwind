@@ -1,18 +1,10 @@
 @import './../../../styles/variables.scss';
 
 .navigation{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    left: 60px;
-    top: 0;
-    border-right: 2px white solid;
+    width: 100vw;
     backdrop-filter: blur(4px);
-    z-index: 10;
 
     &__content{
-        position: relative;
         background: black;
         width: 650px;
         height: 100vh;
@@ -25,10 +17,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 10px;
+            padding: 3.2rem 20px;
             cursor: pointer;
             color: white;
-            transition-duration: 0.3s;
+            transition-duration: 0.1s;
             transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
     
             &:hover{
@@ -39,11 +31,12 @@
             &__name{
                 // font-size: calc(var(--vh)*8);
                 font-size: 4rem;
+                font-weight: 400;
                 pointer-events: none;
             }
     
             &__number{
-                font-size: 1.2rem;
+                font-size: .8rem;
                 pointer-events: none;
             }
         }

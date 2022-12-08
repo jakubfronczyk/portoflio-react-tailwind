@@ -43,8 +43,8 @@ const Header = () => {
                 <span>Jakub fronczyk</span>
             </div>
         </header>
-        <aside className={`${sidebar ? classes.active : classes.inactive }`}>
-        <Navbar />
+        <aside className={`${classes.menu} ${sidebar && classes.active } ${sidebar && classes.blur }`}>
+            <Navbar />
         </aside>
         </>
     )
