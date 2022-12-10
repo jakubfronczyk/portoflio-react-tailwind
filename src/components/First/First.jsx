@@ -9,7 +9,7 @@ const First = () => {
                 <figure className={classes.home__content__img}>
                     <img src={img1} alt="" />
                     <svg width="100%" height="100%">
-                        <rect fill="none" stroke='#fff' width="100%" height="100%" />
+                        <rect fill="none" stroke='#fff' stroke-width='4' width="100%" height="100%" />
                     </svg>
                 </figure>
                 <div className={classes.home__content__description}>

@@ -3,7 +3,11 @@ import classes from './Contact.module.scss'
 
 const Contact = () => {
     return (
-        <div className={classes.contact}>Contact</div>
+        <div className={classes.contact}>
+            <div className={classes.contact__content}>
+
+            </div>
+        </div>
     )
 }
 
