@@ -28,7 +28,8 @@
             &__project {
                 width: 400px;
                 height: 400px;
-                background-color: #D8D2CB;
+                background-color: grey;
+                border: 2px solid white;
 
                 &__img{
                     margin: auto;
@@ -44,9 +45,9 @@
 
                 &__title{
                     width: 100%;
-                    height: 100px;
-                    background: #F5EDDC;
-                    color: black;
+                    height: 24%;
+                    background: black;
+                    color: white;
                     display: flex;
                     flex-direction: column;
                     padding-top: 1.2rem;
